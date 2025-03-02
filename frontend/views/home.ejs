@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home | Note-Taking App</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <!-- Include the header partial (navigation bar) -->
+  <%- include("partials/header") %>
+  
+  <main class="container" id="home-container">
+    <!-- Main welcome message for the Home page -->
+    <h2>Welcome, to the Note-Taking App! 👋</h2>
+    <p class="description">Click on "My Notes" to view and manage your notes</p>
+
+    <!-- Link to navigate to the notes page -->
+    <a href="/notes" class="notes-link">My Notes</a>
+  </main>
+
+  <!-- Include the footer partial -->
+  <%- include("partials/footer") %>
+
+  <!-- Link to the main JavaScript file, with 'defer' to ensure it loads after the DOM -->
+  <script src="/script.js" defer></script>
+</body>
+</html>

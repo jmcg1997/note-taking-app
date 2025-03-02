@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Notes | Note-Taking App</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- Include the header partial (navigation bar) -->
+  <%- include("partials/header") %>
+
+  <main class="container">
+
+    <!-- Page Title -->
+    <h1>Note-Taking App</h1>
+    
+    <!-- Form Section - Add New Note -->
+    <h2>Add Notes</h2>
+    <form id="new-note-form" class="note-form">
+      <input type="text" id="title" placeholder="Enter note title..." required>
+      <textarea id="content" placeholder="Write your note here..." required></textarea>
+      <button type="submit" class="btn btn-add">➕ Add Note</button>
+    </form>
+
+    <!-- Notes List Section -->
+    <h2>📝 My Notes</h2>
+    <div id="notes-list" class="notes-container">
+      <p>📌 Loading notes...</p>
+    </div>
+
+  </main>
+
+  <!-- Include the footer partial -->
+  <%- include("partials/footer") %>
+
+  <!-- Main JavaScript file (deferred to load after the page is ready) -->
+  <script src="/script.js" defer></script>
+
+</body>
+</html>
